@@ -1,0 +1,116 @@
+/* lato-300 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local(""), url("../fonts/lato-v17-latin-300.woff2") format("woff2"), url("../fonts/lato-v17-latin-300.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/lato-v17-latin-regular.woff2") format("woff2"), url("../fonts/lato-v17-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-italic - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/lato-v17-latin-italic.woff2") format("woff2"), url("../fonts/lato-v17-latin-italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/lato-v17-latin-700.woff2") format("woff2"), url("../fonts/lato-v17-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-sans-regular - latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/pt-sans-v12-latin-regular.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-sans-italic - latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local(""), url("../fonts/pt-sans-v12-latin-italic.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin-italic.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-sans-700 - latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/pt-sans-v12-latin-700.woff2") format("woff2"), url("../fonts/pt-sans-v12-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* mountains-of-christmas-regular - latin */
+@font-face {
+  font-family: 'Mountains of Christmas';
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/mountains-of-christmas-v13-latin-regular.woff2") format("woff2"), url("../fonts/mountains-of-christmas-v13-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* mountains-of-christmas-700 - latin */
+@font-face {
+  font-family: 'Mountains of Christmas';
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/mountains-of-christmas-v13-latin-700.woff2") format("woff2"), url("../fonts/mountains-of-christmas-v13-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  font-family: Lato;
+}
+
+.policy {
+  padding-top: 56px;
+}
+
+.policy__wrapper .policy__bg {
+  height: 100%;
+  padding: 35px 0 35px 20px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-123.34%, #6DD400), color-stop(-30.96%, #0091FF), color-stop(41.97%, #6236FF), color-stop(134.43%, #B620E0));
+  background: -webkit-linear-gradient(bottom, #6DD400 -123.34%, #0091FF -30.96%, #6236FF 41.97%, #B620E0 134.43%);
+  background: -o-linear-gradient(bottom, #6DD400 -123.34%, #0091FF -30.96%, #6236FF 41.97%, #B620E0 134.43%);
+  background: linear-gradient(0deg, #6DD400 -123.34%, #0091FF -30.96%, #6236FF 41.97%, #B620E0 134.43%);
+}
+
+.policy__wrapper .policy__bg .policy__title h1 {
+  margin: 0 auto;
+  max-width: 780px;
+  font-family: Mountains of Christmas;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 1.3333333730697632px;
+  text-align: left;
+  color: #fff;
+}
+
+.policy__wrapper .policy__content {
+  margin: 0 auto;
+  max-width: 780px;
+  padding: 20px 20px;
+}

@@ -1,0 +1,614 @@
+/* lato-300 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/lato-v17-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-italic - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v17-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-700 - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+//   ----------------------------------------
+
+/* pt-sans-regular - latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/pt-sans-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-sans-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* pt-sans-italic - latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/pt-sans-v12-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-sans-v12-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* pt-sans-700 - latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/pt-sans-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-sans-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+//   -----------------------------------
+
+/* mountains-of-christmas-regular - latin */
+@font-face {
+    font-family: 'Mountains of Christmas';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/mountains-of-christmas-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mountains-of-christmas-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* mountains-of-christmas-700 - latin */
+@font-face {
+    font-family: 'Mountains of Christmas';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/mountains-of-christmas-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mountains-of-christmas-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+//   ------------------------------------------------
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(109, 107, 107) !important;
+}
+
+// body{
+//     background-color: #333;
+// }
+
+.header__burger{
+    display: none;
+}
+
+
+// Header style starts -----------------------
+
+.header{
+    max-height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    .wrapper{
+        background: #28073D url(../images/RightTopCornerAdd2Back.png) no-repeat center;
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 100%;
+        .header__logo{
+            display: flex;
+            align-items: center;
+            margin-left: 34px;
+            .header__logo-link{
+                .header__logo-pic{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+            }
+        }
+        .header__nav{
+        //     background: #28073D url(../images/RightTopCornerAdd2Back.png) no-repeat center;
+        // background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            // align-items: center;
+            .header__list{
+                display: flex;
+                flex-wrap: wrap;
+                // align-items: center;
+                margin: 0;
+                .header__item{
+                    margin-right: 34px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .header__link{
+                        font-family: 'Mountains of Christmas';
+                        font-size: 16px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: 29px;
+                        letter-spacing: 1px;
+                        &:hover, &:active, &:focus{
+                            color: rgb(146, 140, 140);
+                            opacity: .85;
+                        }
+                    }
+                }
+                .header__item:last-child{
+                    margin-right: 15px;
+                }
+            }
+        }
+        .header__announce{
+            width: 67px;
+            margin-bottom: 10px;
+            // margin-right: 30px;
+            // padding-top: 9px;
+            p{
+                font-family: PT Sans Caption;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 13px;
+                letter-spacing: 0px;
+                text-align: center;
+                color: #989494;
+                display: block;
+                margin: 0;
+            }
+            span{
+                font-family: 'Mountains of Christmas';
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 15px;
+                letter-spacing: 1px;
+                float: right;
+                color: #989494;
+            }
+        }
+        .header__buttons{
+            margin-right: 34px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .app-store{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                a{
+                    img{
+                        
+                    }
+                }
+            }
+            .play-market{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                a{
+                    img{
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Header style ends -----------------------
+
+// Main Picture style starts -----------------------
+
+    .main-picture{
+        width: 100%;
+        // height: 100%;
+        height: 80vh;
+        background: url(../images/HEROHD.png) no-repeat center;
+        background-size: cover;
+    }
+
+// Main Picture style ends -----------------------
+
+// Site-content style starts -----------------------------
+
+    .site-content{
+        background: linear-gradient(0deg, #6DD400 -123.34%, #0091FF -30.96%, #6236FF 41.97%, #B620E0 134.43%);
+        .site-content__wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            // display: grid;
+            // grid-template-rows: 1fr;
+            // grid-template-columns: 1fr 1fr 1fr;
+            // grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            // grid-gap: 2vw;
+            align-items: center;
+            margin: 0;
+            .site-content__accept{         
+                max-width: fit-content;
+                .accept__wrapper{
+                    // margin-left: 34px;
+                    margin-top: 10px;
+                    p{
+                        margin-bottom: 6px;
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0.5833333134651184px;
+                        color: #fff;
+                    }
+                    .accept__cards{
+                        margin-bottom: 6px;
+                        img{
+
+                        }
+                    }
+                    .accept__links{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        margin-bottom: 14px;
+                        a:first-child{
+                            p{
+                                font-family: Lato;
+                                font-size: 12px;
+                                line-height: 14px;
+                                letter-spacing: 0.75px;
+                                border-right: 1px solid #fff;
+                                padding-right: 6px;
+                                border-bottom: 1px solid #fff;
+                            }
+                        }
+                        a:last-child{
+                            p{
+                                font-family: Lato;
+                                font-size: 12px;
+                                line-height: 14px;
+                                letter-spacing: 0.75px;
+                                padding-left: 6px;
+                                border-bottom: 1px solid #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .site-content__title{
+                max-width: 534px;
+                h1{
+                    font-family: 'Mountains of Christmas' ;
+                    font-size: 32px;
+                    font-style: italic;
+                    font-weight: 400;
+                    line-height: 33px;
+                    letter-spacing: 1.3333333730697632px;
+                    text-align: center;
+                    color: #fff;
+                }
+            }
+            .site-content__app-buttons{
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                // margin-right: 34px;
+                // margin: 0 auto;
+                .site-content__buttons{
+                    margin-bottom: 6px;
+                    .site-content__app-store{
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                    }
+                    .site-content__play-market{
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                    }
+                }
+                .site-content__privacy{
+                    max-width: fit-content;
+                    p{
+                        display: block;
+                        // margin: 0;
+                        border-bottom: 1px solid #fff;
+                        font-family: Lato;
+                        font-size: 12px;
+                        line-height: 14px;
+                        letter-spacing: 0.75px;
+                        text-align: center;
+                        // border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+
+
+// Site-content stle ends -----------------------------
+
+// Block info style starts -------------------
+
+    .block-info{
+        background: #E7F1FF;
+        border-radius: 0px 0px 16px 0px;
+        .block-info__wrapper{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            .block-info__pic{
+                position: absolute;
+                transform: translateY(-30px);
+                .block-info__pic-exm{
+                    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.837413));
+                }
+            }
+            .block-info__desc{
+                margin-left: 230px;
+                margin-top: 21px;
+                margin-bottom: 30px;
+                p{
+                    max-width: 763px;
+                    font-family: PT Sans Caption;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 0.5833333134651184px;
+                    text-align: left;
+                    color: #290247;
+                }
+                .block-info__desc__buttons-sm{
+                    .block-info__desc__button_apple{
+                        margin-right: 10px;
+                    }
+                    .block-info__desc__button_market{
+                        
+                    }
+                }
+            }
+        }
+    }
+
+// Block info style ends -------------------
+
+//  Collections style starts --------------------
+
+.collections {
+    background-color: #fff;
+    margin-bottom: 60px;
+    &__wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+        .collections__title {
+            h2 {
+                font-family: Mountains of Christmas;
+                font-size: 28px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 33px;
+                letter-spacing: 0.75px;
+                text-align: center;
+                padding-top: 16px;
+                color: #290247;
+            }
+        }
+        .collections__cards {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-gap: 3vw;
+            align-items: center;
+            .collections__card {
+                justify-self: center;
+                max-width: 320px;
+                max-height: 260px;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.128879);
+                border-radius: 16px;
+            &__img {
+                &__exm {
+                }
+            }
+            &__title {
+                h3 {
+                    font-family: Mountains of Christmas;
+                    font-size: 18px;
+                    font-style: italic;
+                    font-weight: 700;
+                    line-height: 33px;
+                    letter-spacing: 0.75px;
+                    text-align: center;
+                    color: #290247;
+                    ;
+                }
+            }
+            }
+            .collections__card_desc {
+                padding: 10px 25px 15px 25px;
+                p {
+                    color: #290247;
+                    font-family: PT Sans;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 0.5833333134651184px;
+                    text-align: center;
+                }
+            }
+        }
+        .more-to-come {
+            margin-top: 44px;
+            p {
+                color: #290247;
+                font-family: PT Sans Caption;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 33px;
+                letter-spacing: 0.6666666865348816px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+    //  Collections style ends --------------------
+
+    // Footer style starts ------------------------
+
+    
+.footer {
+    background: #2C2F4A;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        margin-left: 34px;
+        .footer__info {
+            &__logos {
+                .footer__info__logo {
+                }
+                .footer__info__apple {
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
+                .footer__info__market {
+                    margin-left: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            &__policy {
+                display: flex;
+                flex-wrap: wrap;
+                font-family: Lato;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.75px;
+                max-width: fit-content;
+                p{
+                    display: block;
+                    margin: 0;
+                    margin-top: 6px;
+                    border-bottom: 1px solid #fff;
+                }
+                .footer__info__delivery-policy{
+                    p{
+                        border-right: 1px solid #fff;
+                        padding-right: 4px;
+                    }
+                }
+                .footer__info__return-policy{
+                    p{
+                        padding-left: 5px;
+                    }
+                }
+            }
+            &__terms{
+                font-family: Lato;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.75px;
+                max-width: fit-content;
+                margin-top: 6px;
+                .footer__info__terms-policy{
+                    p{
+                        display: block;
+                        margin: 0;
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+        .footer__trade-mark {
+            // max-width: 100%;
+            margin: 0 auto;
+            // max-width: 415px;
+            margin: 25px 0;
+            text-align: center;
+            h4 {
+                display: block;
+                margin: 0 auto;
+                font-family: Lato;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                max-width: 415px;
+                color: #fff;
+            }
+            p{      
+                font-family: Lato;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 300;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: #fff;
+                margin: 0;
+            }
+        }
+        .footer__social-links {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            .footer__fb {
+                margin-right: 10px;
+            }
+            .footer__inst {
+                margin-right: 10px;
+            }
+            .footer__twit {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+    // Footer style ends -------------------------
