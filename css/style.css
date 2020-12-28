@@ -96,7 +96,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #6d6b6b !important;
+  color: #3d3c3c !important;
 }
 
 .header__burger {
@@ -272,6 +272,7 @@ a:hover {
   background: url(../images/HEROHD.png) no-repeat center;
   -webkit-background-size: cover;
           background-size: cover;
+  margin-top: 20px;
 }
 
 .site-content {
@@ -517,7 +518,7 @@ a:hover {
   -ms-grid-column-align: center;
       justify-self: center;
   max-width: 320px;
-  max-height: 260px;
+  max-height: 100%;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.128879);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.128879);
   -webkit-border-radius: 16px;
@@ -535,8 +536,16 @@ a:hover {
   color: #290247;
 }
 
+.collections__wrapper .collections__cards .collections__card:hover {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
+
 .collections__wrapper .collections__cards .collections__card_desc {
-  padding: 10px 25px 15px 25px;
+  padding: 10px 25px 0 25px;
 }
 
 .collections__wrapper .collections__cards .collections__card_desc p {
@@ -548,6 +557,65 @@ a:hover {
   line-height: 18px;
   letter-spacing: 0.5833333134651184px;
   text-align: center;
+}
+
+.collections__wrapper .collections__cards .collections__card_price {
+  padding: 10px 25px 0 25px;
+}
+
+.collections__wrapper .collections__cards .collections__card_price h3 {
+  text-transform: uppercase;
+  font-family: PT Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.5833333134651184px;
+  color: #290247;
+  border-top: 1px solid #cac5c5;
+  padding-top: 10px;
+}
+
+.collections__wrapper .collections__cards .collections__card_price .collections__card_available-prices {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid #cac5c5;
+}
+
+.collections__wrapper .collections__cards .collections__card_price .collections__card_available-prices .price {
+  color: #290247;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.collections__wrapper .collections__cards .collections__card_price .collections__card_available-prices .price span {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.collections__wrapper .collections__cards .collections__card_price > p {
+  text-align: center;
+  color: #290247;
+}
+
+.collections__wrapper .collections__cards .collection__card_gallery .collection__card_gallery_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 14px;
+  margin-bottom: 10px;
+}
+
+.collections__wrapper .collections__cards .collection__card_gallery .collection__card_gallery_wrapper .collections__card_gallery_photo {
+  width: 48px;
+  height: 66px;
 }
 
 .collections__wrapper .more-to-come {

@@ -30,9 +30,12 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .main-picture {
+    height: 25vh !important;
+    margin-top: 50px !important;
+  }
   p {
     border: none !important;
-    padding: 2px !important;
   }
   .site-content__buttons {
     text-align: center;
@@ -44,9 +47,19 @@
     -ms-transform: translateY(5px) translateX(20px) !important;
     -o-transform: translateY(5px) translateX(20px) !important;
   }
+  .policy {
+    padding-top: 56px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .policy {
+    padding-top: 34px !important;
+  }
+  .main-picture {
+    height: 25vh !important;
+    margin-top: 30px !important;
+  }
   .menu__btn {
     top: 10px !important;
   }
@@ -58,6 +71,7 @@
   }
   .header__logo .header__logo-link .header__logo-pic {
     width: 60% !important;
+    margin: 0 auto;
   }
   .block-info__pic {
     display: none;
@@ -130,6 +144,10 @@
 }
 
 @media screen and (max-width: 420px) {
+  .main-picture {
+    height: 20vh !important;
+    margin-top: 30px !important;
+  }
   .collections__card {
     max-width: 250px !important;
   }
