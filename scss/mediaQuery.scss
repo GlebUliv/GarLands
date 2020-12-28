@@ -30,6 +30,12 @@
 }
 
 @media screen and (max-width: 1024px){
+    .footer__info__logos {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
     .main-picture {
         height: 30vh !important;
         margin-top: 55px !important;
@@ -65,7 +71,7 @@
         margin-top: 32px !important;
     }
     .menu__btn {
-        top: 10px !important;
+        top: 20px !important;
     }
     .header__logo{
         margin: 0 auto !important;
