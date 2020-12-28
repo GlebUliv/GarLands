@@ -57,6 +57,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .price {
+    font-size: 18px !important;
+  }
   .policy {
     padding-top: 34px !important;
   }
