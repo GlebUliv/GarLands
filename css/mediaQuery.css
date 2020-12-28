@@ -18,6 +18,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .main-picture {
+    height: 65vh !important;
+    margin-top: 80px !important;
+  }
   .header__logo {
     margin: 0 auto !important;
   }
@@ -31,8 +35,8 @@
 
 @media screen and (max-width: 1024px) {
   .main-picture {
-    height: 25vh !important;
-    margin-top: 50px !important;
+    height: 35vh !important;
+    margin-top: 85px !important;
   }
   p {
     border: none !important;
@@ -58,7 +62,7 @@
   }
   .main-picture {
     height: 25vh !important;
-    margin-top: 30px !important;
+    margin-top: 60px !important;
   }
   .menu__btn {
     top: 10px !important;
@@ -146,7 +150,7 @@
 @media screen and (max-width: 420px) {
   .main-picture {
     height: 20vh !important;
-    margin-top: 30px !important;
+    margin-top: 60px !important;
   }
   .collections__card {
     max-width: 250px !important;
