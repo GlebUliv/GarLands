@@ -590,6 +590,7 @@ a:hover {
   color: #290247;
   font-weight: bold;
   font-size: 22px;
+  margin-bottom: 5px;
 }
 
 .collections__wrapper .collections__cards .collections__card_price .collections__card_available-prices .price span {
